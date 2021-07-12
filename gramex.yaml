@@ -1,0 +1,8 @@
+url:
+  mongo:
+    pattern: /$YAMLURL/mongo
+    handler: FormHandler
+    kwargs:
+      url: 'plugin:mongodb://localhost:27017'
+      database: testdatabase
+      collection: testcollection
