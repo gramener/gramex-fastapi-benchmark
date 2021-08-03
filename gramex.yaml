@@ -1,8 +1,16 @@
 url:
-  mongo:
-    pattern: /$YAMLURL/mongo
+  admission:
+    pattern: /$YAMLURL/admission
     handler: FormHandler
     kwargs:
       url: 'plugin:mongodb://localhost:27017'
       database: testdatabase
       collection: testcollection
+
+  imdb:
+    pattern: /$YAMLURL/imdb
+    handler: FormHandler
+    kwargs:
+      url: 'plugin:mongodb://localhost:27017'
+      database: testdatabase
+      collection: imdbtitles
